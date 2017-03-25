@@ -1,7 +1,5 @@
 # DeepDream_Streaming_Video
-Augmented reality stream video processing utilizing Google's TensorFlow + DeepDream 
-
-# [Recurrent Neural Networks  - A Short TensorFlow Tutorial](https://svds.com/tensorflow-rnn-tutorial/)
+Augmented reality stream video processing utilizing Google's TensorFlow + DeepDream
 
 ### Setup
 Clone this repo to your local machine, and add the RNN-Tutorial directory as a system variable to your `~/.profile`. Instructions given for bash shell:
@@ -25,7 +23,7 @@ pip install -r requirements.txt
 
 
 ### Install Jupyter
-*If you have _NOT previously installed_ jupyterhub:* Run this shell script to install jupyterhub as a background service
+*If you have _NOT previously installed_ jupyterhub:* Run this shell script to install jupyterhub as a background service. *NOTE: This only works on Linux!*
 ```
 . build/jupyterhub_install.sh
 ```
