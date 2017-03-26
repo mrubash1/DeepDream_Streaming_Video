@@ -15,7 +15,7 @@ source ~/.profile
 Create a Conda environment (You will need to [Install Conda](https://conda.io/docs/install/quick.html) first)
 
 ```bash
-conda create --name tf-dd-stream python=3
+conda create --name tf-dd-stream python=3.5
 source activate tf-dd-stream
 cd $DD_STREAM
 pip install -r requirements.txt
