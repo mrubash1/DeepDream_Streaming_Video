@@ -205,7 +205,7 @@ def load_image_into_memory_from_file(filename='pilatus800.jpg', show_image=False
 if __name__ == '__main__':
 
     #Use CPU only --> Temporary Flag
-    os.environ['CUDA_VISIBLE_DEVICES']=""
+    #os.environ['CUDA_VISIBLE_DEVICES']=""
 
     deepdream = DeepDream(model_fn='$DD_STREAM/data/models/tensorflow_inception_graph.pb',
                           layer='mixed4d_3x3_bottleneck_pre_relu')
