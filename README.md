@@ -1,4 +1,4 @@
-# DeepDream_Streaming_Video
+# Live Dream
 Augmented reality stream video processing utilizing Google's TensorFlow + DeepDream
 
 ### Setup
