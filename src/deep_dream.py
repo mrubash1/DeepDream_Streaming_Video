@@ -216,4 +216,4 @@ if __name__ == '__main__':
     img=load_image_into_memory_from_file(filename=filename,show_image=False)
 
     print ('Running Deep Dream...')
-    output_image=deepdream.load_parameters_run_deep_dream_return_image(img,octave_n=4,show_image=True)
+    output_image=deepdream.load_parameters_run_deep_dream_return_image(img,octave_n=4,show_image=False)
