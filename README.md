@@ -23,14 +23,14 @@ pip install -r requirements.txt
 
 
 ### Install TensorFlow
-If you have a NVIDIA GPU with [CUDA](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation) already installed
+If you have a NVIDIA GPU with [CUDA](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation) and [cuDNN](https://developer.nvidia.com/rdp/cudnn-download) already installed:
 
 ```bash
 pip install tensorflow-gpu==1.0.1
 ```
+<sub>[Guide for installing CUDA and cuDNN on Linux](https://www.tensorflow.org/versions/r0.11/get_started/os_setup#optional-linux-enable-gpu-support)<sub>
 
 If you will be running TensorFlow on CPU only (e.g. a MacBook Pro), use the following command (if you get an error the first time you run this command read below):
-
 ```bash
 pip install --upgrade\
  https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.1-py3-none-any.whl
