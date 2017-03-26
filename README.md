@@ -22,18 +22,6 @@ pip install -r requirements.txt
 ```
 
 
-### Install Jupyter
-*If you have _NOT previously installed_ jupyterhub:* Run this shell script to install jupyterhub as a background service. *NOTE: This only works on Linux!*
-```
-. build/jupyterhub_install.sh
-```
-Add conda environment to the available ipykernals 
-```
-python -m ipykernel install \
-    --user --name tf-dd-stream --display-name "tf-dd-stream python=3"
-```
-
-
 ### Install TensorFlow
 If you have a NVIDIA GPU with [CUDA](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation) already installed
 
@@ -49,6 +37,12 @@ pip install --upgrade\
 ```
 <sub>**Error note** (if you did not get an error skip this paragraph): Depending on how you installed pip and/or conda, we've seen different outcomes. If you get an error the first time, rerunning it may incorrectly show that it installs without error. Try running with `pip install --upgrade  https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.1-py3-none-any.whl --ignore-installed`. The `--ignore-installed` flag tells it to reinstall the package. If that still doesn't work, please open an [issue](https://github.com/silicon-valley-data-science/RNN-Tutorial/issues), or you can try to follow the advice [here](https://www.tensorflow.org/install/install_mac).</sub>
 
+
+### Download inception to models folder
+```
+cd $DD_STREAM
+. build/download_inception.sh
+```
 
 ### Run unittests
 We have included example unittests for the `tf_train_ctc.py` script
