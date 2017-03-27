@@ -1,6 +1,7 @@
 # Live Dream
 Augmented reality stream video processing utilizing Google's TensorFlow + DeepDream
- _NOTE: This code is being actively developed. We apologize for any bugs, and thanks for reporting any issues!_
+
+_NOTE: This code is being actively developed. We apologize for any bugs, and thanks for reporting any issues!_
 
 ### Setup
 Clone this repo to your local machine, and add the RNN-Tutorial directory as a system variable to your `~/.profile`. Instructions given for bash shell:
