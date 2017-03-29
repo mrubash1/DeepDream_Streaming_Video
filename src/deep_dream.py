@@ -17,7 +17,7 @@ class DeepDream(object):
     """
 
     def __init__(self,
-                 model_fn='tensorflow_inception_graph.pb',
+                 model_fn='../build/tensorflow_inception_graph.pb',
                  layer='mixed4d_3x3_bottleneck_pre_relu'):
         self.load_graph(os.path.expandvars(model_fn))
         self.k5x5 = self.setup_k()
@@ -207,11 +207,11 @@ if __name__ == '__main__':
     #Use CPU only --> Temporary Flag
     #os.environ['CUDA_VISIBLE_DEVICES']=""
 
-    deepdream = DeepDream(model_fn='$DD_STREAM/data/models/tensorflow_inception_graph.pb',
+    deepdream = DeepDream(model_fn='build/tensorflow_inception_graph.pb',
                           layer='mixed4d_3x3_bottleneck_pre_relu')
 
     #Load image into file
-    filename='$DD_STREAM/data/pilatus800.jpg'
+    filename='../data/pilatus800.jpg'
     print ('Loading image into memory')
     img=load_image_into_memory_from_file(filename=filename,show_image=False)
 
