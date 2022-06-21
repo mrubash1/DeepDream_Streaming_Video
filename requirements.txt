@@ -4,7 +4,7 @@ ipython-genutils==0.1.0
 keras==2.0.2
 mako==1.0.6
 matplotlib==2.0.0
-numpy==1.12.0
+numpy==1.22.0
 pillow==8.1.1
 protobuf==3.2.0
 pyyaml==5.4
